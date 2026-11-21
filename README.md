@@ -109,28 +109,21 @@ The high-level research pipeline is illustrated below. It is a conceptual overvi
 
 ### 🏥 Federated system architecture
 
-The diagram below summarises the intended client-server learning pattern. Encryption is shown as a research protection layer; consult the relevant notebook for the exact point at which encryption and decryption are applied.
+Clients train locally and send model updates for server-side aggregation. Homomorphic encryption is shown as an optional protection layer; its exact use depends on the experiment.
 
 ```mermaid
-flowchart TB
-    subgraph CLIENTS["🏥 Participating healthcare clients"]
-        A["Client A<br/>Local MRI dataset"]
-        B["Client B<br/>Local MRI dataset"]
-        C["Client C<br/>Local MRI dataset"]
+flowchart LR
+    subgraph CLIENTS["🏥 Healthcare clients"]
+        A["Client A<br/>Local MRI + training"]
+        B["Client B<br/>Local MRI + training"]
+        C["Client C<br/>Local MRI + training"]
     end
 
-    A --> A1["Local preprocessing<br/>and model training"]
-    B --> B1["Local preprocessing<br/>and model training"]
-    C --> C1["Local preprocessing<br/>and model training"]
-
-    A1 --> U["Model updates"]
-    B1 --> U
-    C1 --> U
-
-    U --> H["🔐 Homomorphic encryption layer<br/>(when enabled in the experiment)"]
-    H --> S["Federated aggregation server"]
-    S --> F["FedAvg / FedProx / FedDyn"]
-    F --> G["Updated global model"]
+    A --> H["🔐 Protected updates<br/>(HE when enabled)"]
+    B --> H
+    C --> H
+    H --> S["Federated server<br/>FedAvg · FedProx · FedDyn"]
+    S --> G["Updated global model"]
     G --> A
     G --> B
     G --> C
@@ -138,9 +131,9 @@ flowchart TB
     classDef client fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
     classDef secure fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
     classDef server fill:#dcfce7,stroke:#16a34a,color:#14532d
-    class A,B,C,A1,B1,C1 client
+    class A,B,C client
     class H secure
-    class U,S,F,G server
+    class S,G server
 ```
 
 ### 🔁 Protected communication sequence
