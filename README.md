@@ -216,69 +216,39 @@ The four categories represented in this research are:
 
 These are dataset labels, not clinical conclusions. The class names and label encoding should be verified against the data preparation cells before reusing a notebook.
 
-## 📊 Results and Visualisations
+## 📊 Final Comparative Results
 
-A key part of this repository is its collection of experiment plots. The galleries below use result images already committed under `Images/`.
+The following figures show the **final comparison of FedAvg, FedProx and FedDyn** across the three model architectures. Only comparative results are displayed here.
 
-### 1. 📈 Training and performance trends
-
-The repository includes training-round plots for accuracy, loss and AUC, allowing the progression of global models to be inspected.
+### ⚖️ F1-score comparison
 
 <div align="center">
-  <img src="Images/FedProx%20Global%20Model%20Performance%20Metrics%20Accuracy%20Across%20Rounds%20(MobileNetV2).png" width="48%" alt="FedProx MobileNetV2 accuracy across rounds">
-  <img src="Images/FedProx%20Global%20Model%20Performance%20Metrics%20Loss%20Across%20Rounds%20(MobileNetV2).png" width="48%" alt="FedProx MobileNetV2 loss across rounds">
-  <br>
-  <img src="Images/FedProx%20Global%20Model%20Performance%20Metrics%20AUC%20Across%20Rounds%20(MobileNetV2).png" width="48%" alt="FedProx MobileNetV2 AUC across rounds">
-  <img src="Images/Pre-Training%20of%20Stratified%20K-Fold%20CV%20Accuracy%20per%20Client%20(MobileNetV2).png" width="48%" alt="Pre-training cross-validation accuracy per client">
+  <img src="Images/F1%20Score%20Comparison%20FedAvg%20vs%20FedProx%20vs%20FedDyn%20(Custom%20CNN%20Model).png" width="32%" alt="F1-score comparison of FedAvg, FedProx and FedDyn using Custom CNN">
+  <img src="Images/F1%20Score%20Comparison%20FedAvg%20vs%20FedProx%20vs%20FedDyn%20(EfficientNetB0).png" width="32%" alt="F1-score comparison of FedAvg, FedProx and FedDyn using EfficientNetB0">
+  <img src="Images/F1%20Score%20Comparison%20(FedAvg%20vs%20FedProx%20vs%20FedDyn)%20(MobileNetV2).png" width="32%" alt="F1-score comparison of FedAvg, FedProx and FedDyn using MobileNetV2">
 </div>
 
-### 2. 🧮 Confusion matrices
-
-Confusion matrices help inspect which classes are correctly recognised and which classes are confused with one another.
+### 🎯 ROC curve comparison
 
 <div align="center">
-  <img src="Images/FedProx%20Global%20Model%20Alzheimer%27s%20Classification%20Confusion%20Matrix%20(MobileNetV2).png" width="48%" alt="FedProx MobileNetV2 confusion matrix">
-  <img src="Images/FedProx%20Global%20Model%20Alzheimer%27s%20Classification%20Confusion%20Matrix%20(EfficientNetB0).png" width="48%" alt="FedProx EfficientNetB0 confusion matrix">
+  <img src="Images/comparison_roc_curve_3way(custom%20cnn).png" width="32%" alt="ROC curve comparison of three federated algorithms using Custom CNN">
+  <img src="Images/comparison_roc_curve_3way(efficientnetb0).png" width="32%" alt="ROC curve comparison of three federated algorithms using EfficientNetB0">
+  <img src="Images/comparison_roc_curve_3way(mobilenetv2).png" width="32%" alt="ROC curve comparison of three federated algorithms using MobileNetV2">
 </div>
 
-### 3. 🎯 ROC curves
-
-The repository contains one-vs-rest ROC plots for multi-class evaluation.
+### 🧬 t-SNE feature-space comparison
 
 <div align="center">
-  <img src="Images/FedProx%20Global%20Model%20ROC%20Curve%20(One-vs-Rest)%20(MobileNetV2).png" width="48%" alt="FedProx MobileNetV2 ROC curves">
-  <img src="Images/comparison_roc_curve_3way(mobilenetv2).png" width="48%" alt="Three-way ROC comparison for MobileNetV2">
+  <img src="Images/comparison_tsne_3way_algorithms(custom%20cnn).png" width="32%" alt="t-SNE comparison of FedAvg, FedProx and FedDyn using Custom CNN">
+  <img src="Images/comparison_tsne_3way_algorithms(efficientnetb0).png" width="32%" alt="t-SNE comparison of FedAvg, FedProx and FedDyn using EfficientNetB0">
+  <img src="Images/comparison_tsne_3way_algorithms(mobilenetv2).png" width="32%" alt="t-SNE comparison of FedAvg, FedProx and FedDyn using MobileNetV2">
 </div>
 
-### 4. 🧬 Feature-space visualisation
+> **Note:** These figures are comparative experiment outputs. Refer to the thesis and notebook results for the evaluation protocol and exact metric values. t-SNE is an exploratory feature-space visualisation, not a quantitative performance metric.
 
-t-SNE projections provide a two-dimensional view of learned feature representations. They are exploratory visualisations, not a substitute for quantitative evaluation.
+[➡️ View all experiment figures](Images/)
 
-<div align="center">
-  <img src="Images/FedProx%20Global%20Model%20t-SNE%20Latent%20Feature%20Space%20(MobileNetV2).png" width="48%" alt="FedProx MobileNetV2 t-SNE feature space">
-  <img src="Images/comparison_tsne_3way_algorithms(mobilenetv2).png" width="48%" alt="Three-way t-SNE comparison for MobileNetV2">
-</div>
-
-### 5. ⚖️ Federated optimiser comparison
-
-Saved plots compare the F1-score behaviour of FedAvg, FedProx and FedDyn for multiple model architectures.
-
-<div align="center">
-  <img src="Images/F1%20Score%20Comparison%20(FedAvg%20vs%20FedProx%20vs%20FedDyn)%20(MobileNetV2).png" width="78%" alt="F1 score comparison for MobileNetV2">
-  <br>
-  <img src="Images/F1%20Score%20Comparison%20FedAvg%20vs%20FedProx%20vs%20FedDyn%20(EfficientNetB0).png" width="78%" alt="F1 score comparison for EfficientNetB0">
-</div>
-
-### 6. 🖼️ MRI sample visualisations
-
-<div align="center">
-  <img src="Images/Random%20MRI%20Samples%20(MobileNetV2).png" width="48%" alt="Random MRI samples">
-  <img src="Images/Sample%20Images.png" width="48%" alt="Sample MRI images">
-</div>
-
-> **Important:** Plots are provided as visual experiment artefacts. Consult the notebook outputs and thesis for the corresponding split, evaluation protocol, run configuration and metric values. A chart alone is not enough to establish a fair comparison or clinical performance.
-
-[➡️ Browse all result images](Images/)
+---
 
 ## 🗂️ Repository Structure
 
