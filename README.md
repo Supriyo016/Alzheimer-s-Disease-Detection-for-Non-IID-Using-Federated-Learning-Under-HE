@@ -483,11 +483,15 @@ If this repository helps your learning or research, consider giving it a ⭐ on 
 
 <div align="center">
 
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&repeat=true&width=760&height=34&lines=Thank+you+for+exploring+this+research;Advancing+privacy-aware+collaborative+AI;Research+%E2%80%A2+Experimentation+%E2%80%A2+Open+Science" alt="Animated closing tagline">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=17&duration=2600&pause=850&color=38BDF8&center=true&vCenter=true&repeat=true&width=900&height=42&lines=Learning+Together.+Keeping+Data+Local.;Different+Clients.+Shared+Intelligence.;Privacy-Aware+AI.+Real-World+Research.;Collaborative+Learning+Beyond+Data+Silos." alt="Animated research footer tagline">
 
-  **Built for research, experimentation and learning.** 🧠🔐
+  <h3>🧠 Different Data. Shared Learning. A Smarter Future.</h3>
 
-  <sub>⭐ Star the repository if you find the work useful · Contributions and constructive feedback are welcome.</sub>
+  <p><em>Exploring privacy-aware AI where collaboration grows without centralising raw data.</em></p>
+
+  <p>⭐ <strong>Star</strong> the project · 🍴 <strong>Fork</strong> to experiment · 🤝 <strong>Contribute</strong> to advance the research</p>
+
+  <sub>Built with curiosity, code and a commitment to responsible AI. 🔬🔐</sub>
 
   <sub>Last documentation refresh: November 2026</sub>
 
