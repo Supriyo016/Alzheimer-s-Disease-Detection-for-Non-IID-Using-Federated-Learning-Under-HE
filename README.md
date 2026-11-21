@@ -498,5 +498,5 @@ If this repository helps your learning or research, consider giving it a ⭐ on 
 </div>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:312E81,50:164E63,100:0F172A&height=150&section=footer&text=Thanks%20for%20Exploring%20the%20Research&fontSize=23&fontColor=F8FAFC&animation=twinkling&fontAlignY=70" width="100%" alt="Animated footer wave">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:0E7490,100:312E81&height=165&section=footer&text=Data%20Stays%20Local.%20Learning%20Travels.&fontSize=24&fontColor=F8FAFC&animation=twinkling&fontAlignY=68" width="100%" alt="Animated footer wave: Data Stays Local. Learning Travels.">
 </p>
