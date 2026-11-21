@@ -5,7 +5,11 @@
 -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:164E63,100:312E81&height=235&section=header&text=%20 Privacy-Aware%20Alzheimer's%20Disease%20Detection&fontSize=32&fontColor=F8FAFC&animation=fadeIn&fontAlignY=36&desc=Federated%20Learning%20%7C%20Non-IID%20Data%20%7C%20Homomorphic%20Encryption&descSize=15&descAlignY=58" width="100%" alt="Animated research project banner">
+  <img
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:164E63,100:312E81&height=235&section=header&text=%F0%9F%A7%A0%20Privacy-Aware%20Alzheimer%27s%20Disease%20Detection&fontSize=29&fontColor=F8FAFC&animation=fadeIn&fontAlignY=36&desc=Federated%20Learning%20%7C%20Non-IID%20Data%20%7C%20Homomorphic%20Encryption&descSize=15&descAlignY=58"
+    width="100%"
+    alt="🧠 Privacy-Aware Alzheimer's Disease Detection banner"
+  >
 </p>
 
 <div align="center">
