@@ -498,5 +498,5 @@ If this repository helps your learning or research, consider giving it a ⭐ on 
 </div>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:0E7490,100:312E81&height=165&section=footer&text=Data%20Stays%20Local.%20Learning%20Travels.&fontSize=24&fontColor=F8FAFC&animation=twinkling&fontAlignY=68" width="100%" alt="Animated footer wave: Data Stays Local. Learning Travels.">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:0E7490,100:312E81&height=165&section=footer&text=Federated%20Intelligence%20%7C%20Encrypted%20Collaboration%20%7C%20Next-Generation%20Healthcare%20AI&fontSize=21&fontColor=F8FAFC&animation=twinkling&fontAlignY=68" width="100%" alt="Animated footer wave: Federated Intelligence | Encrypted Collaboration | Next-Generation Healthcare AI.">
 </p>
