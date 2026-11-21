@@ -53,7 +53,7 @@
 
 ## 📑 Table of Contents
 
-- [🌍 About the Project](#-about-the-project)
+- [Project Overview](#project-overview)
 - [🎯 Research Objectives](#-research-objectives)
 - [🧩 Research Workflow](#-research-workflow)
 - [🛡️ Core Concepts](#️-core-concepts)
@@ -72,7 +72,7 @@
 
 ---
 
-## 🌍 Project Overview 
+## Project Overview
 
 Alzheimer's disease is a progressive neurological condition. MRI data can provide useful information for research into computer-assisted analysis, but medical data are often distributed across hospitals or institutions and cannot always be pooled in one central location.
 
