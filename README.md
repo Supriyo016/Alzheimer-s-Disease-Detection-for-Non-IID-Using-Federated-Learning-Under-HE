@@ -61,7 +61,7 @@
 - [📊 Final Comparative Results](#-final-comparative-results)
 - [🗂️ Repository Structure](#️-repository-structure)
 - [⚙️ Getting Started](#️-getting-started)
-- [🧰 Technology Stack](#-technology-stack)
+- [🧰 Technology & Tools](#-technology--tools)
 - [🔬 Reproducibility Notes](#-reproducibility-notes)
 - [⚠️ Limitations and Responsible Use](#️-limitations-and-responsible-use)
 - [🚀 Future Scope](#-future-scope)
