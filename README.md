@@ -4,10 +4,18 @@
   Repository: https://github.com/Supriyo016/Alzheimer-s-Disease-Detection-for-Non-IID-Using-Federated-Learning-Under-HE
 -->
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:164E63,100:312E81&height=235&section=header&text=Privacy-Aware%20Alzheimer%27s%20MRI%20Research&fontSize=32&fontColor=F8FAFC&animation=fadeIn&fontAlignY=36&desc=Federated%20Learning%20%7C%20Non-IID%20Data%20%7C%20Homomorphic%20Encryption&descSize=15&descAlignY=58" width="100%" alt="Animated research project banner">
+</p>
+
 <div align="center">
 
 # 🧠 Privacy-Aware Alzheimer's Disease Classification
 ### Federated Learning • Non-IID MRI Data • Homomorphic Encryption
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&repeat=true&width=820&height=38&lines=Learning+Across+Decentralised+Healthcare+Clients;Privacy-Preserving+AI+for+Non-IID+MRI+Data;Federated+Learning+%C3%97+Homomorphic+Encryption" alt="Animated research taglines">
+</p>
 
 <p>
   <a href="https://github.com/Supriyo016/Alzheimer-s-Disease-Detection-for-Non-IID-Using-Federated-Learning-Under-HE">
@@ -96,6 +104,62 @@ The high-level research pipeline is illustrated below. It is a conceptual overvi
   <img src="Images/Experimental%20Design.png" width="92%" alt="Experimental design and research workflow">
   <p><em>Experimental design included in the repository.</em></p>
 </div>
+
+
+
+### 🏥 Federated system architecture
+
+The diagram below summarises the intended client-server learning pattern. Encryption is shown as a research protection layer; consult the relevant notebook for the exact point at which encryption and decryption are applied.
+
+```mermaid
+flowchart TB
+    subgraph CLIENTS["🏥 Participating healthcare clients"]
+        A["Client A<br/>Local MRI dataset"]
+        B["Client B<br/>Local MRI dataset"]
+        C["Client C<br/>Local MRI dataset"]
+    end
+
+    A --> A1["Local preprocessing<br/>and model training"]
+    B --> B1["Local preprocessing<br/>and model training"]
+    C --> C1["Local preprocessing<br/>and model training"]
+
+    A1 --> U["Model updates"]
+    B1 --> U
+    C1 --> U
+
+    U --> H["🔐 Homomorphic encryption layer<br/>(when enabled in the experiment)"]
+    H --> S["Federated aggregation server"]
+    S --> F["FedAvg / FedProx / FedDyn"]
+    F --> G["Updated global model"]
+    G --> A
+    G --> B
+    G --> C
+
+    classDef client fill:#e0f2fe,stroke:#0284c7,color:#0c4a6e
+    classDef secure fill:#ede9fe,stroke:#7c3aed,color:#4c1d95
+    classDef server fill:#dcfce7,stroke:#16a34a,color:#14532d
+    class A,B,C,A1,B1,C1 client
+    class H secure
+    class U,S,F,G server
+```
+
+### 🔁 Protected communication sequence
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant S as Federated Server
+    participant C as Hospital Client
+    participant E as HE Protection Layer
+
+    S->>C: Send current global model
+    C->>C: Train locally on MRI data
+    C->>E: Prepare model update for protection
+    E-->>S: Return protected update (if configured)
+    S->>S: Aggregate client contributions
+    S-->>C: Distribute updated global model
+    Note over S,C: Repeat for the next federated round
+```
 
 ### 🔄 Federated learning cycle
 
@@ -419,8 +483,16 @@ If this repository helps your learning or research, consider giving it a ⭐ on 
 
 <div align="center">
 
-**Built for research, experimentation and learning.** 🧠🔐
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3000&pause=1000&color=38BDF8&center=true&vCenter=true&repeat=true&width=760&height=34&lines=Thank+you+for+exploring+this+research;Advancing+privacy-aware+collaborative+AI;Research+%E2%80%A2+Experimentation+%E2%80%A2+Open+Science" alt="Animated closing tagline">
 
-<sub>Last documentation refresh: November 2026</sub>
+  **Built for research, experimentation and learning.** 🧠🔐
+
+  <sub>⭐ Star the repository if you find the work useful · Contributions and constructive feedback are welcome.</sub>
+
+  <sub>Last documentation refresh: November 2026</sub>
 
 </div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:312E81,50:164E63,100:0F172A&height=150&section=footer&text=Thanks%20for%20Exploring%20the%20Research&fontSize=23&fontColor=F8FAFC&animation=twinkling&fontAlignY=70" width="100%" alt="Animated footer wave">
+</p>
