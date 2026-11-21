@@ -57,7 +57,7 @@
 - [🧩 Research Workflow](#-research-workflow)
 - [🛡️ Core Concepts](#️-core-concepts)
 - [🧪 Models and Experiments](#-models-and-experiments)
-- [📊 Results and Visualisations](#-results-and-visualisations)
+- [📊 Final Comparative Results](#-final-comparative-results)
 - [🗂️ Repository Structure](#️-repository-structure)
 - [⚙️ Getting Started](#️-getting-started)
 - [🧰 Technology Stack](#-technology-stack)
@@ -245,8 +245,6 @@ The following figures show the **final comparison of FedAvg, FedProx and FedDyn*
 </div>
 
 > **Note:** These figures are comparative experiment outputs. Refer to the thesis and notebook results for the evaluation protocol and exact metric values. t-SNE is an exploratory feature-space visualisation, not a quantitative performance metric.
-
-[➡️ View all experiment figures](Images/)
 
 ---
 
