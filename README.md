@@ -5,13 +5,10 @@
 -->
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:164E63,100:312E81&height=235&section=header&text=Privacy-Aware%20Alzheimer%27s%20MRI%20Research&fontSize=32&fontColor=F8FAFC&animation=fadeIn&fontAlignY=36&desc=Federated%20Learning%20%7C%20Non-IID%20Data%20%7C%20Homomorphic%20Encryption&descSize=15&descAlignY=58" width="100%" alt="Animated research project banner">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,45:164E63,100:312E81&height=235&section=header&text=%20 Privacy-Aware%20Alzheimer's%20Disease%20Detection&fontSize=32&fontColor=F8FAFC&animation=fadeIn&fontAlignY=36&desc=Federated%20Learning%20%7C%20Non-IID%20Data%20%7C%20Homomorphic%20Encryption&descSize=15&descAlignY=58" width="100%" alt="Animated research project banner">
 </p>
 
 <div align="center">
-
-# 🧠 Privacy-Aware Alzheimer's Disease Classification
-### Federated Learning • Non-IID MRI Data • Homomorphic Encryption
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=2800&pause=900&color=22D3EE&center=true&vCenter=true&repeat=true&width=820&height=38&lines=Learning+Across+Decentralised+Healthcare+Clients;Privacy-Preserving+AI+for+Non-IID+MRI+Data;Federated+Learning+%C3%97+Homomorphic+Encryption" alt="Animated research taglines">
@@ -71,7 +68,7 @@
 
 ---
 
-## 🌍 About the Project
+## 🌍 Project Overview 
 
 Alzheimer's disease is a progressive neurological condition. MRI data can provide useful information for research into computer-assisted analysis, but medical data are often distributed across hospitals or institutions and cannot always be pooled in one central location.
 
@@ -341,7 +338,7 @@ Download or obtain the dataset from its authorised source and update the dataset
 
 **Dataset note:** The repository's tracked file list does not include the MRI image dataset. You must obtain it separately and comply with its licence and usage conditions.
 
-## 🧰 Technology Stack
+## 🧰 Technology & Tools
 
 The notebooks and research topic are centred on the following ecosystem. Confirm the exact library and version requirements in the notebook before setting up a reproducible environment.
 
